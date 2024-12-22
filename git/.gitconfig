@@ -1,0 +1,17 @@
+[core]
+	editor = code --wait
+	autocrlf = input
+[user]
+	name = Taras Zadziarnouski
+	email = taras.zadziarnouski@gmail.com
+[merge]
+	ff = true
+
+[includeIf "gitdir:~/Code/ffp/"]
+	path = .gitconfig-ffp
+
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
