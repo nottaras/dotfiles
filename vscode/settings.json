@@ -1,0 +1,31 @@
+{
+    "workbench.startupEditor": "none",
+    "editor.inlineSuggest.enabled": true,
+    "terminal.integrated.defaultProfile.linux": "zsh",
+    "git.enableSmartCommit": true,
+    "window.menuBarVisibility": "toggle",
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false,
+        "python": false
+    },
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.autopep8"
+    },
+    "git.confirmSync": false,
+    "git.openRepositoryInParentFolders": "always",
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false,
+    "[xml]": {
+        "editor.defaultFormatter": "DotJoshJohnson.xml"
+    },
+    "window.systemColorTheme": "auto",
+    "window.autoDetectColorScheme": true,
+    "workbench.colorTheme": "Default Light Modern",
+    "redhat.telemetry.enabled": false,
+    "liveServer.settings.donotShowInfoMsg": true,
+    "workbench.activityBar.location": "top",
+    "terminal.integrated.defaultProfile.osx": "zsh"
+}
