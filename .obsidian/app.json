@@ -1,0 +1,18 @@
+{
+  "showInlineTitle": false,
+  "alwaysUpdateLinks": true,
+  "promptDelete": false,
+  "livePreview": false,
+  "showLineNumber": true,
+  "showRibbon": false,
+  "attachmentFolderPath": "/",
+  "trashOption": "local",
+  "foldHeading": true,
+  "newFileLocation": "root",
+  "newFileFolderPath": "",
+  "defaultViewMode": "preview",
+  "readableLineLength": true,
+  "strictLineBreaks": false,
+  "propertiesInDocument": "source",
+  "showUnsupportedFiles": true
+}

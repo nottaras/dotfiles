@@ -1,0 +1,33 @@
+/* Hide the folder titled "assets" in the Obsidian file explorer */
+/* .nav-folder-title[data-path="review"],
+.nav-folder-title[data-path="templates"], */
+.nav-folder-title[data-path="assets"]{
+    display: none;
+}
+
+/* Hide original trailing spaces, new lines, and tabs by setting font size to zero */
+.cm-trailing-space-new-line, .cm-trailing-space-a, .cm-trailing-space-b, .cm-tab{
+    font-size: 0;
+}
+
+/* Add a faint dot before each trailing space or new line to visualize them */
+.cm-trailing-space-a::before, .cm-trailing-space-b::before, .cm-trailing-space-new-line::before, .cm-tab::before{
+  content:'·';
+  color:var(--text-faint);
+  font-size: initial;
+}
+
+/* For new lines created by trailing spaces, use an arrow symbol to show line breaks */
+.cm-trailing-space-new-line::before {
+  content:'↵';  /* Adds a line break symbol (arrow) */
+}
+
+/* Use an arrow symbol to represent tab characters for clear tab visualization */
+.cm-tab::before {
+  content:'⟶' /* Adds a symbol to represent a tab */
+}
+
+/* Hide the button in the top-right corner for tabs in Obsidian */
+.workspace-tab-header-tab-list {
+  display: none !important;
+}
