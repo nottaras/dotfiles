@@ -1,31 +1,70 @@
 {
+  "files.exclude": {
+     "**/.gitignore": true,
+    "**/.editorconfig": true,
+    "**/.prettierrc.json": true,
+    "**/.markdownlint.json": true,
+  "**/.vscode": true,
+  "**/assets": true
+  },
+  "search.exclude": {
+    "**/.gitignore": true,
+    "**/.editorconfig": true,
+    "**/.prettierrc.json": true,
+    "**/.markdownlint.json": true,
+  "**/.vscode": true,
+  "**/assets": true
+  },
+
     "workbench.startupEditor": "none",
     "editor.inlineSuggest.enabled": true,
+    "editor.minimap.enabled": false,
+    "editor.formatOnSave": true,
     "terminal.integrated.defaultProfile.linux": "zsh",
     "git.enableSmartCommit": true,
-    "window.menuBarVisibility": "toggle",
-    "github.copilot.enable": {
-        "*": true,
-        "plaintext": false,
-        "markdown": false,
-        "scminput": false,
-        "python": false
-    },
-    "[python]": {
-        "editor.defaultFormatter": "ms-python.autopep8"
-    },
     "git.confirmSync": false,
     "git.openRepositoryInParentFolders": "always",
     "explorer.confirmDragAndDrop": false,
     "explorer.confirmDelete": false,
-    "[xml]": {
-        "editor.defaultFormatter": "DotJoshJohnson.xml"
-    },
+
     "window.systemColorTheme": "auto",
     "window.autoDetectColorScheme": true,
     "workbench.colorTheme": "Default Light Modern",
-    "redhat.telemetry.enabled": false,
-    "liveServer.settings.donotShowInfoMsg": true,
+    "terminal.integrated.defaultProfile.osx": "zsh",
+
     "workbench.activityBar.location": "top",
-    "terminal.integrated.defaultProfile.osx": "zsh"
+    "[markdown]": {
+        "editor.tabSize": 4,
+        "diffEditor.ignoreTrimWhitespace": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+
+    // Code Spell Checker plugin
+    "cSpell.language": "en,ru",
+
+    "markdown.extension.toc.levels": "2..6",
+    "markdown.extension.tableFormatter.enabled": true,
+    "markdown.extension.preview.autoShowPreviewToSide": true,
+    "markdown-links.autoStart": true,
+
+    "typescript.suggest.paths": false,
+    "javascript.suggest.paths": false,
+
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+    "editor.codeActionsOnSave": {
+        "source.fixAll.markdownlint": "explicit"
+    },
+
+    "prettier.requireConfig": true,
+    "chat.commandCenter.enabled": false,
+
+    "emeraldwalk.runonsave": {
+      "commands": [
+        {
+          "match": "\\.md$",
+          "cmd": "node .vscode/custom/update-header.js \"${file}\""
+        }
+      ]
+    }
 }

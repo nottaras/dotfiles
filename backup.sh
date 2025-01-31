@@ -10,12 +10,6 @@ mkdir -p zsh
 cp ~/.zshrc zsh/.zshrc
 cp ~/.p10k.zsh zsh/.p10k.zsh
 
-# Backup Git
-mkdir -p git
-cp -r ~/.ssh git/.ssh
-cp ~/.gitconfig git/.gitconfig
-cp ~/.gitconfig-ffp git/.gitconfig-ffp
-
 # Backup VSCode
 mkdir -p vscode
 cp /Users/taras/Library/Application\ Support/Code/User/settings.json vscode/settings.json
@@ -23,7 +17,3 @@ cp /Users/taras/Library/Application\ Support/Code/User/keybindings.json vscode/k
 cp -r /Users/taras/Library/Application\ Support/Code/User/snippets vscode/snippets
 
 # Backup IntelliJ Idea
-
-# Backup Obsidian
-mkdir -p obsidian
-rsync -av --exclude 'workspace.json' --exclude 'workspace-mobile.json' /Users/taras/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/Vault/.obsidian .
