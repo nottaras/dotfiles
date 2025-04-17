@@ -10,6 +10,8 @@ export PATH=/opt/homebrew/bin:$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
 source $(brew --prefix)/opt/zinit/zinit.zsh
 
+zinit ice depth=1
+
 # Zinit theme
 zinit light romkatv/powerlevel10k
 
@@ -18,6 +20,7 @@ zinit light zsh-users/zsh-autosuggestions
 zinit light zsh-users/zsh-syntax-highlighting
 zinit light zsh-users/zsh-completions
 zinit light zsh-users/zsh-history-substring-search
+zinit light ajeetdsouza/zoxide
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"

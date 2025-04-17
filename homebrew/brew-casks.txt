@@ -1,5 +1,8 @@
+amethyst
 anki
+brewlet
 dropbox
+finicky
 flameshot
 fluor
 flycut
