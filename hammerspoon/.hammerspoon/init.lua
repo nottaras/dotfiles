@@ -2,15 +2,19 @@
 
 local appPatterns = {
     { app = "^Safari$" },
+    { app = "^Microsoft Teams$" },
     { app = "^Code$" },
     { app = "^IntelliJ IDEA$", title = "^.+%s–%s.+$" },
     { app = "^Notes$" },
     { app = "^Mail$" },
     { app = "^Calendar$" },
     { app = "^Things$" },
+    { app = "^Anki$", title = "^$" },
+    { app = "^Reminders$" },
     { app = "^Telegram$" },
     { app = "^Spotify$" },
     { app = "^ChatGPT$" },
+    { app = "^Day One$" },
     { app = "^Google Chrome$" },
     { app = "^Docker Desktop$" },
 }

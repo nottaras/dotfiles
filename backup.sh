@@ -17,3 +17,9 @@ cp -r ~/.vscode/custom vscode
 
 mkdir -p hammerspoon
 cp -r ~/.hammerspoon hammerspoon
+
+
+# Backup Alfred
+
+mkdir -p alfred
+cp -r ~/Library/Application\ Support/Alfred/Alfred.alfredpreferences alfred
