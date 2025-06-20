@@ -79,3 +79,65 @@ hs.distributednotifications.new(function()
 end, "AppleInterfaceThemeChangedNotification"):start()
 
 updateAlfredTheme()
+
+---
+
+function toggleApplication(appName)
+    local app = hs.application.find(appName)
+    
+    if app then
+        if app:isFrontmost() then
+            app:hide()
+        else
+            app:activate()
+        end
+    else
+        hs.application.launchOrFocus(appName)
+    end
+end
+
+function launchOrFocus(appName)
+    hs.application.launchOrFocus(appName)
+end
+
+hs.hotkey.bind({"cmd", "alt"}, "t", function()
+    toggleApplication("iTerm")
+end)
+
+hs.hotkey.bind({"cmd", "alt"}, "s", function()
+    toggleApplication("Safari")
+end)
+
+hs.hotkey.bind({"cmd", "alt"}, "v", function()
+    toggleApplication("Visual Studio Code")
+end)
+
+hs.hotkey.bind({"cmd", "alt"}, "n", function()
+    toggleApplication("Notes")
+end)
+
+hs.hotkey.bind({"cmd", "alt"}, "c", function()
+    toggleApplication("ChatGPT")
+end)
+
+hs.hotkey.bind({"cmd", "alt"}, "g", function()
+    toggleApplication("Google Chrome")
+end)
+
+hs.hotkey.bind({"cmd", "alt"}, "i", function()
+    toggleApplication("IntelliJ IDEA")
+end)
+
+hs.hotkey.bind({"cmd", "alt"}, "m", function()
+    toggleApplication("Microsoft Teams")
+end)
+
+hs.hotkey.bind({"cmd", "alt"}, "d", function()
+    toggleApplication("Things")
+end)
+
+
+hs.notify.new({
+    title = "Hammerspoon",
+    informativeText = "App launcher configuration loaded"
+}):send()
