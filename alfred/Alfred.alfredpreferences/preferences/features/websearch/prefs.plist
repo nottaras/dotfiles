@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>customSites</key>
+	<dict>
+		<key>4ADE1416-553B-4FA4-8DCE-04341E8AC319</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>pp</string>
+			<key>text</key>
+			<string>Search Perplexity for '{query}'</string>
+			<key>url</key>
+			<string>https://www.perplexity.ai/search?q={query}</string>
+		</dict>
+		<key>4D990C5D-D12C-4610-AFDE-36A8411C704D</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>dpl</string>
+			<key>text</key>
+			<string>Translate `{query}`</string>
+			<key>url</key>
+			<string>https://www.deepl.com/en/translator#en/ru/{query}</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationUseKeywords</key>
+	<true/>
+	<key>fallbacks</key>
+	<array>
+		<string>features.websearch.google.fallback</string>
+		<string>features.websearch.custom.4D990C5D-D12C-4610-AFDE-36A8411C704D.fallback</string>
+		<string>features.websearch.youtube.fallback</string>
+		<string>features.websearch.custom.4ADE1416-553B-4FA4-8DCE-04341E8AC319.fallback</string>
+	</array>
+	<key>showContacts</key>
+	<false/>
+	<key>showPreferences</key>
+	<false/>
+</dict>
+</plist>
