@@ -1,3 +1,4 @@
+.keepme
 aom
 apr
 apr-util
@@ -23,6 +24,7 @@ gettext
 ghostscript
 giflib
 git-crypt
+git-filter-repo
 glib
 glow
 gmp
@@ -96,6 +98,7 @@ pixman
 pycparser
 python@3.11
 python@3.12
+python@3.13
 readline
 rtmpdump
 sdkman-cli

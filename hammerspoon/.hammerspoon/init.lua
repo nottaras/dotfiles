@@ -53,33 +53,6 @@ hs.window.filter.default:subscribe(hs.window.filter.windowCreated, function(win)
     end
 end)
 
----- Alfred Theme Switcher
-local alfredLightTheme = "Light"
-local alfredDarkTheme  = "Dark"
-
-local function setAlfredTheme(themeName)
-    local script = string.format([[
-        tell application "Alfred 5"
-            set theme "%s"
-        end tell
-    ]], themeName)
-    hs.osascript.applescript(script)
-end
-
-local function updateAlfredTheme()
-    if hs.host.interfaceStyle() == "Dark" then
-        setAlfredTheme(alfredDarkTheme)
-    else
-        setAlfredTheme(alfredLightTheme)
-    end
-end
-
-hs.distributednotifications.new(function()
-    updateAlfredTheme()
-end, "AppleInterfaceThemeChangedNotification"):start()
-
-updateAlfredTheme()
-
 ---
 
 function toggleApplication(appName)
