@@ -1,5 +1,7 @@
 #!/bin/bash
 
+rm -rf homebrew zsh vscode hammerspoon
+
 # Backup Homebrew
 mkdir -p homebrew
 brew list --formula > homebrew/brew-formulas.txt
@@ -15,4 +17,4 @@ cp -r ~/.vscode/custom vscode
 
 # Backup Hammerspoon
 mkdir -p hammerspoon
-cp -r ~/.hammerspoon hammerspoon
+cp ~/.hammerspoon/init.lua hammerspoon/init.lua
