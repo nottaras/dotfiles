@@ -16,6 +16,7 @@ spotify
 sublime-text
 telegram
 todoist
+todoist-app
 transmission
 visual-studio-code
 vlc

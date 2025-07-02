@@ -1,0 +1,67 @@
+{
+	"Insert Table": {
+	  "prefix": "table",
+	  "body": [
+		"| Header 1 | Header 2 | Header 3 |",
+		"|----------|----------|----------|",
+		"| Row 1, Col 1 | Row 1, Col 2 | Row 1, Col 3 |",
+		"| Row 2, Col 1 | Row 2, Col 2 | Row 2, Col 3 |",
+		"| Row 3, Col 1 | Row 3, Col 2 | Row 3, Col 3 |"
+	  ],
+	  "description": "Inserts a basic Markdown table"
+	},
+	"Add Ref Task": {
+	  "prefix": "ref task",
+	  "body": [
+		"### [${1:Task ID} ${2:Task Name}](https://forefrontpower.atlassian.net/browse/${1})",
+		"",
+		"#### Estimate (${1})",
+		"⏳ ${3:0h}",
+		"",
+		"#### Questions (${1})",
+		"- [ ]",
+		"- [ ]",
+		"- [ ]",
+		"",
+		"#### Comments (${1})",
+		"- ",
+		"- ",
+		"- ",
+		"",
+		"---"
+	  ],
+	  "description": "Template for task block with dynamic fields"
+	},
+	"Add checkbox": {
+		"prefix": "checkbox",
+		"body": [
+		  "- [ ] ${1:Task}"
+		],
+		"description": "Inserts a basic Markdown checkbox"
+	  },
+	"Add daily note": {
+		"prefix": "daily note",
+		"body": [
+			"## $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE",
+			"",
+			"### Daily Summary",
+			"",
+			"- [Briefly describe your day]",
+			"",
+			"### What went well today?",
+			"",
+			"- [List positive moments, achievements, events]",
+			"",
+			"### What am I grateful for today?",
+			"",
+			"- 🙏 [1]",
+			"- 🙏 [2]",
+			"- 🙏 [3]",
+			"",
+			"### Thoughts & Reflections",
+			"",
+			"- [Key takeaways, lessons learned, emotions felt]"
+		  ],
+		"description": "Inserts a basic Markdown daily journal template"
+		}
+  }

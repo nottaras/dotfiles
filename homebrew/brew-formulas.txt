@@ -33,7 +33,6 @@ gnutls
 graphite2
 harfbuzz
 highway
-icu4c@76
 icu4c@77
 imath
 jbig2dec

@@ -1,0 +1,89 @@
+{
+  "files.exclude": {
+    "**/.gitignore": true,
+    "**/.gitattributes": true,
+    "**/.editorconfig": true,
+    "**/.markdownlint.json": true,
+    "**/.prettierrc.json": true,
+    "**/.vscode": true
+  },
+
+  "search.exclude": {
+    "**/.gitignore": true,
+    "**/.editorconfig": true,
+    "**/.prettierrc.json": true,
+    "**/.markdownlint.json": true,
+    "**/.vscode": true,
+    "**/assets": true
+  },
+
+  "git.enableSmartCommit": true,
+  "git.confirmSync": false,
+  "git.openRepositoryInParentFolders": "always",
+
+  "editor.tabCompletion": "on",
+  "editor.inlineSuggest.enabled": true,
+  "editor.minimap.enabled": false,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.markdownlint": "explicit"
+  },
+
+  "workbench.startupEditor": "none",
+  "workbench.editor.limit.enabled": true,
+  "workbench.colorTheme": "Default Light Modern",
+  "workbench.activityBar.location": "top",
+  "workbench.editor.enablePreview": true,
+  "workbench.iconTheme": "material-icon-theme",
+
+  "terminal.integrated.defaultProfile.linux": "zsh",
+  "terminal.integrated.defaultProfile.osx": "zsh",
+
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+
+  "window.systemColorTheme": "auto",
+  "window.autoDetectColorScheme": true,
+  "[markdown]": {
+    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
+  },
+
+  "cSpell.language": "en,ru",
+
+  "markdown.extension.toc.levels": "2..6",
+  "markdown.extension.tableFormatter.enabled": true,
+
+  "typescript.suggest.paths": false,
+  "javascript.suggest.paths": false,
+
+  "emeraldwalk.runonsave": {
+    "commands": [
+      {
+        "match": "^(?!.*quick-capture\\.md$).*\\.md$",
+        "cmd": "node /Users/taras/.vscode/custom/update-header.js \"${file}\""
+      }
+    ]
+  },
+
+  "material-icon-theme.folders.theme": "classic",
+  "markdown-preview-enhanced.previewColorScheme": "systemColorScheme",
+  "markdown-preview-enhanced.alwaysShowBacklinksInPreview": false,
+  "markdown-preview-enhanced.previewTheme": "atom-light.css",
+  "markdown-preview-enhanced.codeBlockTheme": "auto.css",
+  "markdown-preview-enhanced.revealjsTheme": "none.css",
+  "markdown-preview-enhanced.enableExtendedTableSyntax": true,
+  "markdown-preview-enhanced.enableHTML5Embed": true,
+  "markdown-preview-enhanced.enableScriptExecution": true,
+  "chat.commandCenter.enabled": false,
+
+  "cSpell.userWords": ["Anki", "Toggl", "кастомизируемый", "компульсивному"],
+
+  "dailyNotes.filePath": "/Users/taras/Notes/Inbox/quick-capture.md",
+  "dailyNotes.dateFormat": "dddd, MMMM Do YYYY, HH:mm",
+  "excalidraw.theme": "auto",
+  "explorer.confirmPasteNative": false,
+
+  "pasteImage.path": "assets/${currentFileNameWithoutExt}",
+  "pasteImage.forceUnixStyleSeparator": true
+}

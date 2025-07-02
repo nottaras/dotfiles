@@ -17,6 +17,8 @@ local appPatterns = {
     { app = "^Day One$" },
     { app = "^Google Chrome$" },
     { app = "^Docker Desktop$" },
+    { app = "^iTerm2$"},
+    { app = "^Finder$"},
 }
 
 local minWidth = 600
