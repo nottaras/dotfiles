@@ -1,0 +1,14 @@
+[core]
+	editor = code --wait
+	autocrlf = input
+[user]
+	name = Taras Zadziarnouski
+	email = taras.zadziarnouski@gmail.com
+[merge]
+	ff = true
+
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
