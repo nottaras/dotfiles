@@ -1,14 +1,39 @@
-[core]
-	editor = code --wait
-	autocrlf = input
+# Fallback identity for repos outside ~/Projects/personal or ~/Projects/work
 [user]
-	name = Taras Zadziarnouski
-	email = taras.zadziarnouski@gmail.com
-[merge]
-	ff = true
+    name  = Taras Zadziarnouski
+    email = taras.zadziarnouski@gmail.com
 
-[filter "lfs"]
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
-	clean = git-lfs clean -- %f
+# Profile overrides — must come after [user] so they take precedence
+[includeIf "gitdir:~/Projects/personal/"]
+    path = ~/.gitconfig-personal
+
+[includeIf "gitdir:~/Projects/work/"]
+    path = ~/.gitconfig-work
+
+[init]
+    defaultBranch = main
+
+[pull]
+    rebase = true
+
+[push]
+    default          = current
+    autoSetupRemote  = true
+
+[rebase]
+    autoStash = true
+
+[merge]
+    conflictstyle = diff3
+
+[diff]
+    colorMoved = default
+
+[alias]
+    st      = status -sb
+    co      = checkout
+    br      = branch -vv
+    lg      = log --oneline --graph --decorate --all
+    last    = log -1 HEAD --stat
+    unstage = reset HEAD --
+    undo    = reset --soft HEAD~1
