@@ -9,9 +9,9 @@
 			"keepDefaultCaCertificates": {
 				"enabled": true
 			},
-			"timeout": 0,
 			"storeCookies": true,
 			"sendCookies": true,
+			"timeout": 0,
 			"oauth2": {
 				"useSystemBrowser": false
 			}
@@ -71,7 +71,8 @@
 			"hasSeenWelcomeModal": true
 		},
 		"general": {
-			"defaultLocation": "/Users/taraszadernovsky/.bruno"
+			"defaultLocation": "/Users/taraszadernovsky/.bruno",
+			"defaultWorkspacePath": "/Users/taraszadernovsky/Library/Application Support/bruno/default-workspace-1"
 		},
 		"autoSave": {
 			"enabled": false,
@@ -98,8 +99,8 @@
 	"themeBg": "#ffffff",
 	"window-bounds": {
 		"x": 0,
-		"y": 30,
-		"width": 2560,
-		"height": 1410
+		"y": 33,
+		"width": 1728,
+		"height": 1084
 	}
 }
