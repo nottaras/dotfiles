@@ -4,5 +4,7 @@
   "obsidian-git",
   "obsidian-custom-attachment-location",
   "backlink-cache",
-  "obsidian-linter"
+  "obsidian-linter",
+  "table-editor-obsidian",
+  "obsidian-excalidraw-plugin"
 ]

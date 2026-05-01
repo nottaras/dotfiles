@@ -1,14 +1,17 @@
 {
   "newFileLocation": "folder",
-  "newFileFolderPath": "01 inbox",
+  "newFileFolderPath": "inbox",
   "userIgnoreFilters": null,
   "defaultViewMode": "preview",
   "livePreview": true,
   "readableLineLength": true,
   "showLineNumber": true,
   "strictLineBreaks": true,
-  "attachmentFolderPath": "08 attachments",
+  "attachmentFolderPath": "attachments",
   "promptDelete": false,
   "showInlineTitle": false,
-  "foldHeading": true
+  "foldHeading": true,
+  "alwaysUpdateLinks": false,
+  "showUnsupportedFiles": true,
+  "trashOption": "local"
 }
