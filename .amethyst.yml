@@ -27,6 +27,7 @@ layouts:
   # - 4column-left
   # - 4column-right
   - column
+  - four-corners
   # - row
   # - floating
   # - widescreen-tall
@@ -283,7 +284,8 @@ hide-menu-bar-icon: false
 float-small-windows: true
 
 # Pixel threshold for float-small-windows. Windows with both width and height below this value are considered small (in px, default 500).
-small-window-size: 500
+# Set higher to catch IDEA dialogs (Push, Rename, etc.) which are typically 600-800px wide.
+small-window-size: 800
 
 # true if the mouse should move position to the center of a window when it becomes focused (default false). Note that this is largely incompatible with focus-follows-mouse.
 mouse-follows-focus: false
