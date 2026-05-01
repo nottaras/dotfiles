@@ -6,6 +6,13 @@ Personal macOS configuration managed with [GNU Stow](https://www.gnu.org/softwar
 
 - `brewfile` — all Homebrew packages, casks, and taps
 
+### Manual installs (not available in Homebrew)
+
+- [GoodLinks](https://goodlinks.app) — link manager
+- [Perplexity](https://www.perplexity.ai) — AI search
+- [Things 3](https://culturedcode.com/things/) — task manager
+- [Toggl Track](https://toggl.com/track/) — time tracking
+
 ## Why
 
 Version-controlled dotfiles mean reproducible, portable setups across machines. New Mac? A few commands and you're back to a known-good state.
