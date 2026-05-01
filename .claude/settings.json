@@ -2,5 +2,9 @@
   "theme": "auto",
   "enabledPlugins": {
     "context7@claude-plugins-official": true
+  },
+  "attribution": {
+    "commit": "",
+    "pr": ""
   }
 }
