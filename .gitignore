@@ -1,2 +1,8 @@
 .DS_Store
 .idea
+
+# Obsidian
+.obsidian/plugins/*/*
+!.obsidian/plugins/*/data.json
+.obsidian/themes
+.obsidian/workspace.json
