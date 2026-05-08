@@ -1,10 +1,11 @@
 {
-  "theme": "auto",
-  "enabledPlugins": {
-    "context7@claude-plugins-official": true
-  },
   "attribution": {
     "commit": "",
     "pr": ""
-  }
+  },
+  "enabledPlugins": {
+    "context7@claude-plugins-official": true
+  },
+  "theme": "auto",
+  "skipAutoPermissionPrompt": true
 }
