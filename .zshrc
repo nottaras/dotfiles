@@ -1,6 +1,10 @@
 # Starship
 eval "$(starship init zsh)"
 
+# Neovim
+export EDITOR="$(which nvim)"
+export VISUAL="$(which nvim)"
+
 # Homebrew
 export PATH=/opt/homebrew/bin:$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 

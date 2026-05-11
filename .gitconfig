@@ -37,3 +37,6 @@
     last    = log -1 HEAD --stat
     unstage = reset HEAD --
     undo    = reset --soft HEAD~1
+
+[core]
+	editor = nvim
