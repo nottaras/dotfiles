@@ -6,5 +6,6 @@
   "enabledPlugins": {
     "context7@claude-plugins-official": true
   },
-  "theme": "auto"
+  "theme": "auto",
+  "skipAutoPermissionPrompt": true
 }
