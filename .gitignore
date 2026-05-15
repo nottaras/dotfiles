@@ -6,3 +6,5 @@
 !.obsidian/plugins/*/data.json
 .obsidian/themes
 .obsidian/workspace.json
+
+.config/nvim/lazy-lock.json

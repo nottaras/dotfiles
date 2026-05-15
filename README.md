@@ -32,7 +32,7 @@ git clone git@github.com:nottaras/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
 
 # Install all packages
-brew bundle --file .brewfile
+brew bundle --file brewfile
 
 # Symlink configs with stow (once you have config directories here)
 stow .

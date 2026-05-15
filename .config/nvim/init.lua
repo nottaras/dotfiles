@@ -193,6 +193,36 @@ require("lazy").setup({
 			},
 		},
 	},
+
+  {
+  "lewis6991/gitsigns.nvim",
+  event = "BufReadPost",
+  opts = {
+    signs = {
+      add          = { text = "+" },
+      change       = { text = "~" },
+      delete       = { text = "-" },
+      topdelete    = { text = "‾" },
+      changedelete = { text = "~" },
+    },
+  },
+},
+
+{
+  "kdheepak/lazygit.nvim",
+  dependencies = { "nvim-lua/plenary.nvim" },
+  cmd = "LazyGit",
+},
+
+{
+  "akinsho/toggleterm.nvim",
+  keys = "<leader>tt",
+  opts = {
+    open_mapping = "<leader>tt",
+    direction = "float",
+    float_opts = { border = "curved" },
+  },
+},
 })
 
 local map = function(mode, lhs, rhs, desc)
@@ -240,3 +270,11 @@ map("n", "<C-u>", "<C-u>zz", "Scroll up (centred)")
 
 map("n", "n", "nzzzv", "Next search result (centred)")
 map("n", "N", "Nzzzv", "Prev search result (centred)")
+
+map("n", "<leader>gg", "<cmd>LazyGit<CR>",                           "Open LazyGit")
+map("n", "<leader>gb", "<cmd>Gitsigns blame_line<CR>",               "Blame line")
+map("n", "<leader>gd", "<cmd>Gitsigns diffthis<CR>",                 "Diff file")
+map("n", "<leader>gs", "<cmd>Gitsigns stage_hunk<CR>",               "Stage hunk")
+map("n", "<leader>gr", "<cmd>Gitsigns reset_hunk<CR>",               "Reset hunk")
+map("n", "]h",         "<cmd>Gitsigns next_hunk<CR>",                "Next hunk")
+map("n", "[h",         "<cmd>Gitsigns prev_hunk<CR>",                "Prev hunk")
