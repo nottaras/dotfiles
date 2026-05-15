@@ -2,7 +2,6 @@
   "copyLinkToElemenetAnchorTo100": false,
   "copyFrameLinkByName": false,
   "disableDoubleClickTextEditing": false,
-  "phoneFooterSafeAreaPadding": false,
   "folder": "Excalidraw",
   "cropFolder": "",
   "annotateFolder": "",
@@ -819,5 +818,6 @@
     "alignment": "center",
     "margin": "normal"
   },
-  "disableContextMenu": false
+  "disableContextMenu": false,
+  "phoneFooterSafeAreaPadding": false
 }
