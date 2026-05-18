@@ -30,9 +30,81 @@
             "option" : false,
             "shift" : false
           }
+        ],
+        "universalBackForward" : true
+      },
+      "if" : {
+        "device" : {
+          "category" : "mouse",
+          "productID" : "0xb020",
+          "productName" : "MX Vertical",
+          "serialNumber" : "9F27B27B591BA79D",
+          "vendorID" : "0x46d"
+        }
+      }
+    },
+    {
+      "buttons" : {
+        "mappings" : [
+
+        ],
+        "universalBackForward" : false
+      },
+      "if" : {
+        "app" : "com.apple.finder",
+        "device" : {
+          "category" : "mouse",
+          "productID" : "0xb020",
+          "productName" : "MX Vertical",
+          "serialNumber" : "9F27B27B591BA79D",
+          "vendorID" : "0x46d"
+        }
+      },
+      "pointer" : {
+        "acceleration" : 0.65,
+        "disableAcceleration" : true,
+        "redirectsToScroll" : false
+      }
+    },
+    {
+      "buttons" : {
+        "mappings" : [
+          {
+            "action" : "media.mute",
+            "button" : 3,
+            "command" : false,
+            "control" : false,
+            "option" : false,
+            "shift" : false
+          }
         ]
       },
       "if" : {
+        "app" : "com.microsoft.teams2",
+        "device" : {
+          "category" : "mouse",
+          "productID" : "0xb020",
+          "productName" : "MX Vertical",
+          "serialNumber" : "9F27B27B591BA79D",
+          "vendorID" : "0x46d"
+        }
+      }
+    },
+    {
+      "buttons" : {
+        "mappings" : [
+          {
+            "action" : "media.mute",
+            "button" : 3,
+            "command" : false,
+            "control" : false,
+            "option" : false,
+            "shift" : false
+          }
+        ]
+      },
+      "if" : {
+        "app" : "us.zoom.xos",
         "device" : {
           "category" : "mouse",
           "productID" : "0xb020",
