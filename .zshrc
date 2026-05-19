@@ -1,6 +1,11 @@
 # Starship
 eval "$(starship init zsh)"
 
+# Direnv
+eval "$(direnv hook zsh)"
+
+export PATH="$PATH:/Applications/IntelliJ IDEA.app/Contents/MacOS"
+
 # Neovim
 export EDITOR="$(which nvim)"
 export VISUAL="$(which nvim)"
