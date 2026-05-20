@@ -1,0 +1,4 @@
+theme = dark:Catppuccin Frappe,light:Catppuccin Latte
+font-size = 14
+keybind = global:shift+cmd+t=toggle_quick_terminal
+
