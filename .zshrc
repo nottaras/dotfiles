@@ -1,6 +1,8 @@
 # Starship
 eval "$(starship init zsh)"
 
+eval "$(fzf --zsh)"
+
 # Direnv
 eval "$(direnv hook zsh)"
 
@@ -21,9 +23,12 @@ zinit ice depth=1
 zinit light zsh-users/zsh-autosuggestions
 zinit light zsh-users/zsh-syntax-highlighting
 zinit light zsh-users/zsh-history-substring-search
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
+bindkey '^F' fzf-cd-widget
 zinit light junegunn/fzf
 zinit light wfxr/forgit
-# zinit light direnv/direnv.zsh-hook
+zinit light agkozak/zsh-z
 
 # jEnv
 export PATH="$HOME/.jenv/bin:$PATH"
