@@ -6,6 +6,8 @@
   "enabledPlugins": {
     "context7@claude-plugins-official": true
   },
+  "effortLevel": "high",
   "theme": "auto",
-  "skipAutoPermissionPrompt": true
+  "skipAutoPermissionPrompt": true,
+  "model": "sonnet"
 }

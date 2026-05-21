@@ -99,9 +99,9 @@
 	"themeBg": "#ffffff",
 	"window-bounds": {
 		"x": 0,
-		"y": 33,
-		"width": 1728,
-		"height": 1084
+		"y": 30,
+		"width": 2560,
+		"height": 1410
 	},
 	"maximized": true
 }
