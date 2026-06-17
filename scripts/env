@@ -1,0 +1,15 @@
+#!/bin/bash
+
+apps=(
+  "Slack"
+  "Microsoft Teams"
+  "Microsoft Outlook"
+)
+
+for app in "${apps[@]}"; do
+  if open -a "$app" 2>/dev/null; then
+    echo "✅ $app"
+  else
+    echo "⚠️ $app — not found, skipping"
+  fi
+done

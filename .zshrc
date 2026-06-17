@@ -11,6 +11,7 @@ eval "$(fzf --zsh)"
 eval "$(direnv hook zsh)"
 
 export PATH="$PATH:/Applications/IntelliJ IDEA.app/Contents/MacOS"
+export PATH="$HOME/.dotfiles/scripts:$PATH"
 
 # Neovim
 export EDITOR="$(which nvim)"
