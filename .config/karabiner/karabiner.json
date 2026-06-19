@@ -4,7 +4,7 @@
             "complex_modifications": {
                 "rules": [
                     {
-                        "description": "F17 -> EN, F18 -> RU",
+                        "description": "F17 -> EN, F18 -> RU, § -> `, ± -> ~",
                         "manipulators": [
                             {
                                 "from": { "key_code": "f17" },
@@ -15,6 +15,24 @@
                                 "from": { "key_code": "f18" },
                                 "to": [{ "select_input_source": { "language": "ru" } }],
                                 "type": "basic"
+                            },
+                            {
+                                "from": { "key_code": "non_us_backslash" },
+                                "to": [{ "key_code": "grave_accent_and_tilde" }],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "non_us_backslash",
+                                    "modifiers": { "mandatory": ["shift"] }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "grave_accent_and_tilde",
+                                        "modifiers": ["shift"]
+                                    }
+                                ],
+                                "type": "basic"
                             }
                         ]
                     }
@@ -22,7 +40,7 @@
             },
             "name": "Default profile",
             "selected": true,
-            "virtual_hid_keyboard": { "keyboard_type_v2": "iso" }
+            "virtual_hid_keyboard": { "keyboard_type_v2": "ansi" }
         }
     ]
 }
