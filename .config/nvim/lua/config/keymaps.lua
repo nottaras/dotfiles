@@ -51,3 +51,5 @@ map("n", "<leader>gs", "<cmd>Gitsigns stage_hunk<CR>",               "Stage hunk
 map("n", "<leader>gr", "<cmd>Gitsigns reset_hunk<CR>",               "Reset hunk")
 map("n", "]h",         "<cmd>Gitsigns next_hunk<CR>",                "Next hunk")
 map("n", "[h",         "<cmd>Gitsigns prev_hunk<CR>",                "Prev hunk")
+
+vim.keymap.set("n", "<leader>e", vim.diagnostic.open_float, { desc = "Show diagnostic" })
