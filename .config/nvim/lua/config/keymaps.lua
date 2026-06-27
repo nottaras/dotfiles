@@ -5,7 +5,7 @@ end
 map("n", "<Esc>", "<cmd>nohlsearch<CR>", "Clear search highlight")
 
 map("n", "<leader>e", "<cmd>Neotree toggle<CR>", "Toggle file explorer")
-map("n", "<leader>o", "<cmd>Neotree focus<CR>", "Focus file explorer")
+map("n", "<leader>oe", "<cmd>Neotree focus<CR>", "Focus file explorer")
 
 map("n", "<leader>ff", "<cmd>Telescope find_files hidden=true<CR>", "Find files")
 map("n", "<leader>fg", "<cmd>Telescope live_grep<CR>", "Search in files (grep)")
@@ -51,5 +51,8 @@ map("n", "<leader>gs", "<cmd>Gitsigns stage_hunk<CR>",               "Stage hunk
 map("n", "<leader>gr", "<cmd>Gitsigns reset_hunk<CR>",               "Reset hunk")
 map("n", "]h",         "<cmd>Gitsigns next_hunk<CR>",                "Next hunk")
 map("n", "[h",         "<cmd>Gitsigns prev_hunk<CR>",                "Prev hunk")
+
+map("n", "<leader>of", "<cmd>Obsidian follow_link<cr>", "Obsidian: follow link")
+map("n", "<leader>ob", "<cmd>Obsidian backlinks<cr>", "Obsidian: backlinks")
 
 vim.keymap.set("n", "<leader>e", vim.diagnostic.open_float, { desc = "Show diagnostic" })
