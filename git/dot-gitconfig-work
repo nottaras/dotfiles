@@ -1,0 +1,7 @@
+[user]
+    name  = Taras Zadernovsky
+    email = taraszadernovsky@achieve.com
+
+# Requires ~/.ssh/config Host entry: github-work -> github.com with work key
+[url "git@github-work:"]
+    insteadOf = git@github.com:

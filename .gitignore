@@ -2,9 +2,11 @@
 .idea
 
 # Obsidian
-.obsidian/plugins/*/*
-!.obsidian/plugins/*/data.json
-.obsidian/themes
-.obsidian/workspace.json
+obsidian/.obsidian/plugins/*/*
+!obsidian/.obsidian/plugins/*/data.json
+obsidian/.obsidian/themes
+obsidian/.obsidian/workspace.json
 
 .config/nvim/lazy-lock.json
+
+.claude

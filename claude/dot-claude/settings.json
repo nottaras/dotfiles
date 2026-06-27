@@ -1,0 +1,13 @@
+{
+  "attribution": {
+    "commit": "",
+    "pr": ""
+  },
+  "enabledPlugins": {
+    "context7@claude-plugins-official": true
+  },
+  "effortLevel": "high",
+  "theme": "auto",
+  "skipAutoPermissionPrompt": true,
+  "model": "sonnet"
+}

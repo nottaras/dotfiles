@@ -2,11 +2,20 @@
 
 Personal macOS configuration managed with [GNU Stow](https://www.gnu.org/software/stow/).
 
-## What
+## Structure
 
-- `brewfile` — all Homebrew packages, casks, and taps
+- `amethyst/` — Amethyst window manager config
+- `aws/` — AWS CLI config
+- `brew/` — Homebrew packages, casks, and taps
+- `claude/` — Claude settings
+- `config/` — `~/.config` (nvim, karabiner, linearmouse, starship)
+- `git/` — gitconfig
+- `mac-library/` — macOS Library (Amethyst, Bruno, Ghostty)
+- `obsidian/` — Obsidian vault config
+- `sdkman/` — SDKMAN config
+- `shell/` — zshrc, scripts (claude quick ask, work launcher)
 
-### Manual installs (not available in Homebrew)
+## Manual installs (not available in Homebrew)
 
 - [GoodLinks](https://goodlinks.app) — link manager
 - [Perplexity](https://www.perplexity.ai) — AI search
@@ -28,19 +37,20 @@ Version-controlled dotfiles mean reproducible, portable setups across machines. 
 # Clone this repo
 git clone git@github.com:nottaras/dotfiles.git ~/.dotfiles
 
-# Enter the repo
-cd ~/.dotfiles
-
 # Install all packages
-brew bundle --file brewfile
+brew bundle --file ~/.dotfiles/brew/brewfile
 
-# Symlink configs with stow (once you have config directories here)
-stow .
+# Symlink configs
+cd ~/.dotfiles
+stow amethyst aws brew claude config git mac-library sdkman shell
+
+# Obsidian (symlink manually into vault)
+ln -sf ~/.dotfiles/obsidian/.obsidian ~/Obsidian/Vault/.obsidian
 ```
 
 **Adding a new tool:**
 
 ```sh
 brew install <tool>
-brew bundle dump --force --file brewfile   # update brewfile
+brew bundle dump --force --file ~/.dotfiles/brew/brewfile
 ```

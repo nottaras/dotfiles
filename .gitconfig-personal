@@ -1,7 +1,0 @@
-[user]
-    name  = Taras Zadziarnouski
-    email = taras.zadziarnouski@gmail.com
-
-# Requires ~/.ssh/config Host entry: github-personal -> github.com with personal key
-[url "git@github-personal:"]
-    insteadOf = git@github.com:
