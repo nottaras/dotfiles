@@ -8,6 +8,6 @@ obsidian/.obsidian/plugins/*/*
 obsidian/.obsidian/themes
 obsidian/.obsidian/workspace.json
 
-.config/nvim/lazy-lock.json
+**/lazy-lock.json
 
 .claude
