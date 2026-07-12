@@ -10,6 +10,7 @@ Personal macOS configuration managed with [GNU Stow](https://www.gnu.org/softwar
 - `claude/` — Claude settings
 - `config/` — `~/.config` (nvim, karabiner, linearmouse, starship)
 - `git/` — gitconfig
+- `idea/` — IntelliJ IDEA keymap
 - `mac-library/` — macOS Library (Amethyst, Bruno, Ghostty)
 - `obsidian/` — Obsidian vault config
 - `sdkman/` — SDKMAN config
@@ -46,6 +47,13 @@ stow amethyst aws brew claude config git mac-library sdkman shell
 
 # Obsidian (symlink manually into vault)
 ln -sf ~/.dotfiles/obsidian/.obsidian ~/Obsidian/Vault/.obsidian
+
+# IntelliJ IDEA keymap — symlink into the JetBrains config for the installed version
+# (replace 2026.1 with your current IntelliJ IDEA version)
+mkdir -p ~/Library/Application\ Support/JetBrains/IntelliJIdea2026.1/keymaps
+ln -sf ~/.dotfiles/idea/macOS\ personal.xml \
+  ~/Library/Application\ Support/JetBrains/IntelliJIdea2026.1/keymaps/macOS\ personal.xml
+# Then in IntelliJ IDEA: Settings → Keymap → select "macOS personal"
 ```
 
 **Adding a new tool:**
