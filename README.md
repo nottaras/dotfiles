@@ -15,6 +15,7 @@ Personal macOS configuration managed with [GNU Stow](https://www.gnu.org/softwar
 - `obsidian/` — Obsidian vault config
 - `sdkman/` — SDKMAN config
 - `shell/` — zshrc, scripts (claude quick ask, work launcher)
+- `vimium/` — Vimium exported options
 
 ## Manual installs (not available in Homebrew)
 
@@ -26,6 +27,10 @@ Personal macOS configuration managed with [GNU Stow](https://www.gnu.org/softwar
   1. Download the latest `.dmg` from [releases](https://github.com/televator-apps/vimari/releases) and install
   2. In Safari → Settings → Extensions, enable Vimari
   3. Config is managed via `mac-library` stow package → `~/Library/userSettings.json`
+- [Vimium](https://chromewebstore.google.com/detail/vimium/dbepggeogbaibhgnhhndojpepiihcmeb) — vim keybindings for Chrome
+  1. Install from Chrome Web Store
+  2. To restore settings: open Vimium options → *Backup and Restore* → paste contents of `vimium/vimium-options.json`
+  3. To save settings: export from Vimium options and overwrite `vimium/vimium-options.json`
 
 ## Why
 
