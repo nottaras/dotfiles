@@ -10,7 +10,7 @@ Personal macOS configuration managed with [GNU Stow](https://www.gnu.org/softwar
 - `claude/` — Claude settings
 - `config/` — `~/.config` (nvim, karabiner, linearmouse, starship)
 - `git/` — gitconfig
-- `mac-library/` — macOS Library (Amethyst, Bruno, Ghostty)
+- `mac-library/` — macOS Library (Amethyst, Bruno, Ghostty, Vimari)
 - `obsidian/` — Obsidian vault config
 - `sdkman/` — SDKMAN config
 - `shell/` — zshrc, scripts (claude quick ask, work launcher)
@@ -21,6 +21,10 @@ Personal macOS configuration managed with [GNU Stow](https://www.gnu.org/softwar
 - [Perplexity](https://www.perplexity.ai) — AI search
 - [Things 3](https://culturedcode.com/things/) — task manager
 - [Toggl Track](https://toggl.com/track/) — time tracking
+- [Vimari](https://github.com/televator-apps/vimari) — vim keybindings for Safari
+  1. Download the latest `.dmg` from [releases](https://github.com/televator-apps/vimari/releases) and install
+  2. In Safari → Settings → Extensions, enable Vimari
+  3. Config is managed via `mac-library` stow package → `~/Library/userSettings.json`
 
 ## Why
 
