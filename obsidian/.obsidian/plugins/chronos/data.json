@@ -4,9 +4,9 @@
   "clickToUse": false,
   "roundRanges": false,
   "useUtc": true,
-  "useAI": true,
+  "useAI": false,
   "showChangelogOnUpdate": true,
-  "enableCaching": false,
+  "enableCaching": true,
   "basesPropNames": {
     "start": "start",
     "end": "end",
