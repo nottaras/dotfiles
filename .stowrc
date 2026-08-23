@@ -5,4 +5,3 @@
 --ignore=DS_Store
 --ignore=.idea
 --ignore=.git
---ignore=.claude
