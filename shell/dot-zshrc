@@ -39,4 +39,3 @@ zinit light agkozak/zsh-z
 # jEnv
 export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
-export PATH="/opt/homebrew/opt/openjdk@21/bin:$PATH"
