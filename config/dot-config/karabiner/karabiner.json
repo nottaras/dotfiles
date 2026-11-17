@@ -4,6 +4,48 @@
             "complex_modifications": {
                 "rules": [
                     {
+                        "description": "M5 remote ⌂ → play/pause",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "identifiers": [
+                                            {
+                                                "product_id": 1031,
+                                                "vendor_id": 25098
+                                            }
+                                        ],
+                                        "type": "device_if"
+                                    }
+                                ],
+                                "from": { "consumer_key_code": "ac_home" },
+                                "to": [{ "key_code": "spacebar" }],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "M5 remote ≡ → screenshot for Anki",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "identifiers": [
+                                            {
+                                                "product_id": 1031,
+                                                "vendor_id": 25098
+                                            }
+                                        ],
+                                        "type": "device_if"
+                                    }
+                                ],
+                                "from": { "key_code": "application" },
+                                "to": [{ "shell_command": "/bin/bash ~/Documents/English/bin/capture.sh" }],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
                         "description": "F17 -> EN, F18 -> RU, § -> `, ± -> ~",
                         "manipulators": [
                             {
@@ -20,6 +62,17 @@
                     }
                 ]
             },
+            "devices": [
+                {
+                    "identifiers": {
+                        "is_keyboard": true,
+                        "is_pointing_device": true,
+                        "product_id": 1031,
+                        "vendor_id": 25098
+                    },
+                    "ignore": false
+                }
+            ],
             "name": "Default profile",
             "selected": true,
             "virtual_hid_keyboard": { "keyboard_type_v2": "ansi" }
