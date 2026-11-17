@@ -16,5 +16,19 @@
     "content": "content",
     "description": "description"
   },
-  "lastSeenVersion": "3.6.10"
+  "lastSeenVersion": "5.2.2",
+  "overflowRangeTitles": true,
+  "translucentItems": false,
+  "axisPosition": "bottom",
+  "gapHorizontal": 20,
+  "gapVertical": 20,
+  "legacyBasesPropNames": {
+    "start": "start",
+    "end": "end",
+    "group": "group",
+    "content": "content",
+    "color": "color",
+    "type": "type",
+    "description": "description"
+  }
 }

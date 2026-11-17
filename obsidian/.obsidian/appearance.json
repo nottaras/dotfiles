@@ -1,9 +1,13 @@
 {
   "showRibbon": false,
   "enabledCssSnippets": [
+    "hide-attachments-folder copy",
     "hide-attachments-folder"
   ],
   "accentColor": "",
   "showViewHeader": false,
-  "cssTheme": "Minimal"
+  "cssTheme": "Minimal",
+  "translucency": true,
+  "baseFontSizeAction": false,
+  "nativeMenus": true
 }

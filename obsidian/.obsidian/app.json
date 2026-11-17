@@ -4,15 +4,18 @@
   "userIgnoreFilters": null,
   "defaultViewMode": "preview",
   "livePreview": true,
-  "readableLineLength": true,
+  "readableLineLength": false,
   "showLineNumber": true,
   "strictLineBreaks": true,
   "attachmentFolderPath": "attachments",
-  "promptDelete": false,
+  "promptDelete": true,
   "showInlineTitle": false,
   "foldHeading": true,
-  "alwaysUpdateLinks": false,
+  "alwaysUpdateLinks": true,
   "showUnsupportedFiles": true,
   "trashOption": "local",
-  "propertiesInDocument": "source"
+  "propertiesInDocument": "source",
+  "settingsPopoutWindow": false,
+  "vimMode": false,
+  "deleteUnlinkedAttachments": "always"
 }
